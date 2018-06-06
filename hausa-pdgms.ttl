@@ -1,0 +1,507 @@
+#TTL FROM INPUT FILE:
+#../aama-data/data//hausa/hausa-pdgms.edn
+
+@prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:    <http://purl.org/dc/elements>.
+@prefix dcterms:    <http://purl.org/dc/terms>.
+@prefix aama:	 <http://id.oi.uchicago.edu/aama/2013/> .
+@prefix aamas:	 <http://id.oi.uchicago.edu/aama/2013/schema/> .
+@prefix hau:   <http://id.oi.uchicago.edu/aama/2013/hausa/> .
+
+#LANG INFO:
+
+aama:Hausa a aamas:Language .
+aama:Hausa rdfs:label "Hausa" .
+aama:Hausa aamas:subfamily "WChadic" .
+aama:Hausa aamas:lpref "hau" .
+aama:Hausa aamas:dataSource "Newman2000" .
+aama:Hausa aamas:dataSourceNotes "" .
+aama:Hausa aamas:geodemoURL "http://www.ethnologue.com/language/hau" .
+aama:Hausa aamas:geodemoTXT "Widespread in Northern Nigeria; also Burkina Faso%% Niger%% and other countries in West Africa.  33%%500%%000 speakers in Nigeria%% all users. L1 users: 18%%500%%000 (1991 SIL). L2 users: 15%%000%%000. Total users in all countries: 46%%874%%100 (as L1: 27%%374%%100; as L2: 19%%500%%000)." .
+
+
+#SCHEMATA: participle
+hau:participle aamas:lang aama:Hausa .
+hau:Participle aamas:lang aama:Hausa .
+hau:participle rdfs:domain aamas:Term .
+hau:Participle rdfs:label "participle exponents" .
+hau:participle rdfs:label "participle" .
+hau:participle rdfs:range hau:Participle .
+hau:Participle rdfs:subClassOf hau:MuExponent .
+hau:participle rdfs:subPropertyOf hau:muProperty .
+
+#SCHEMATA: person
+hau:person aamas:lang aama:Hausa .
+hau:Person aamas:lang aama:Hausa .
+hau:person rdfs:domain aamas:Term .
+hau:Person rdfs:label "person exponents" .
+hau:person rdfs:label "person" .
+hau:person rdfs:range hau:Person .
+hau:Person rdfs:subClassOf hau:MuExponent .
+hau:person rdfs:subPropertyOf hau:muProperty .
+hau:Person1 aamas:lang aama:Hausa .
+hau:Person1 rdf:type hau:Person .
+hau:Person1 rdfs:label "Person1" .
+hau:Person2 aamas:lang aama:Hausa .
+hau:Person2 rdf:type hau:Person .
+hau:Person2 rdfs:label "Person2" .
+hau:Person3 aamas:lang aama:Hausa .
+hau:Person3 rdf:type hau:Person .
+hau:Person3 rdfs:label "Person3" .
+
+#SCHEMATA: derivedStem
+hau:derivedStem aamas:lang aama:Hausa .
+hau:Derivedstem aamas:lang aama:Hausa .
+hau:derivedStem rdfs:domain aamas:Term .
+hau:Derivedstem rdfs:label "derivedStem exponents" .
+hau:derivedStem rdfs:label "derivedStem" .
+hau:derivedStem rdfs:range hau:Derivedstem .
+hau:Derivedstem rdfs:subClassOf hau:MuExponent .
+hau:derivedStem rdfs:subPropertyOf hau:muProperty .
+hau:B aamas:lang aama:Hausa .
+hau:B rdf:type hau:Derivedstem .
+hau:B rdfs:label "B" .
+hau:BIntensive aamas:lang aama:Hausa .
+hau:BIntensive rdf:type hau:Derivedstem .
+hau:BIntensive rdfs:label "BIntensive" .
+hau:M aamas:lang aama:Hausa .
+hau:M rdf:type hau:Derivedstem .
+hau:M rdfs:label "M" .
+hau:MIntensive aamas:lang aama:Hausa .
+hau:MIntensive rdf:type hau:Derivedstem .
+hau:MIntensive rdfs:label "MIntensive" .
+hau:R aamas:lang aama:Hausa .
+hau:R rdf:type hau:Derivedstem .
+hau:R rdfs:label "R" .
+hau:S aamas:lang aama:Hausa .
+hau:S rdf:type hau:Derivedstem .
+hau:S rdfs:label "S" .
+hau:SIntensive aamas:lang aama:Hausa .
+hau:SIntensive rdf:type hau:Derivedstem .
+hau:SIntensive rdfs:label "SIntensive" .
+hau:SMIntensive aamas:lang aama:Hausa .
+hau:SMIntensive rdf:type hau:Derivedstem .
+hau:SMIntensive rdfs:label "SMIntensive" .
+hau:SS aamas:lang aama:Hausa .
+hau:SS rdf:type hau:Derivedstem .
+hau:SS rdfs:label "SS" .
+hau:T aamas:lang aama:Hausa .
+hau:T rdf:type hau:Derivedstem .
+hau:T rdfs:label "T" .
+hau:TIntensive aamas:lang aama:Hausa .
+hau:TIntensive rdf:type hau:Derivedstem .
+hau:TIntensive rdfs:label "TIntensive" .
+
+#SCHEMATA: number
+hau:number aamas:lang aama:Hausa .
+hau:Number aamas:lang aama:Hausa .
+hau:number rdfs:domain aamas:Term .
+hau:Number rdfs:label "number exponents" .
+hau:number rdfs:label "number" .
+hau:number rdfs:range hau:Number .
+hau:Number rdfs:subClassOf hau:MuExponent .
+hau:number rdfs:subPropertyOf hau:muProperty .
+hau:Plural aamas:lang aama:Hausa .
+hau:Plural rdf:type hau:Number .
+hau:Plural rdfs:label "Plural" .
+hau:Singular aamas:lang aama:Hausa .
+hau:Singular rdf:type hau:Number .
+hau:Singular rdfs:label "Singular" .
+hau:_NA aamas:lang aama:Hausa .
+hau:_NA rdf:type hau:Number .
+hau:_NA rdfs:label "_NA" .
+
+#SCHEMATA: vmorphClass
+hau:vmorphClass aamas:lang aama:Hausa .
+hau:Vmorphclass aamas:lang aama:Hausa .
+hau:vmorphClass rdfs:domain aamas:Term .
+hau:Vmorphclass rdfs:label "vmorphClass exponents" .
+hau:vmorphClass rdfs:label "vmorphClass" .
+hau:vmorphClass rdfs:range hau:Vmorphclass .
+hau:Vmorphclass rdfs:subClassOf hau:MuExponent .
+hau:vmorphClass rdfs:subPropertyOf hau:muProperty .
+hau:FiniteToBeAdded aamas:lang aama:Hausa .
+hau:FiniteToBeAdded rdf:type hau:Vmorphclass .
+hau:FiniteToBeAdded rdfs:label "FiniteToBeAdded" .
+hau:Affix_SubjMark aamas:lang aama:Hausa .
+hau:Affix_SubjMark rdf:type hau:Vmorphclass .
+hau:Affix_SubjMark rdfs:label "Affix_SubjMark" .
+hau:NonFin_Participles aamas:lang aama:Hausa .
+hau:NonFin_Participles rdf:type hau:Vmorphclass .
+hau:NonFin_Participles rdfs:label "NonFin_Participles" .
+hau:Stem_DervSem aamas:lang aama:Hausa .
+hau:Stem_DervSem rdf:type hau:Vmorphclass .
+hau:Stem_DervSem rdfs:label "Stem_DervSem" .
+hau:Stem_DervTense aamas:lang aama:Hausa .
+hau:Stem_DervTense rdf:type hau:Vmorphclass .
+hau:Stem_DervTense rdfs:label "Stem_DervTense" .
+hau:Stem_Tam aamas:lang aama:Hausa .
+hau:Stem_Tam rdf:type hau:Vmorphclass .
+hau:Stem_Tam rdfs:label "Stem_Tam" .
+
+#SCHEMATA: pos
+hau:pos aamas:lang aama:Hausa .
+hau:Pos aamas:lang aama:Hausa .
+hau:pos rdfs:domain aamas:Term .
+hau:Pos rdfs:label "pos exponents" .
+hau:pos rdfs:label "pos" .
+hau:pos rdfs:range hau:Pos .
+hau:Pos rdfs:subClassOf hau:MuExponent .
+hau:pos rdfs:subPropertyOf hau:muProperty .
+hau:Noun aamas:lang aama:Hausa .
+hau:Noun rdf:type hau:Pos .
+hau:Noun rdfs:label "Noun" .
+hau:Pronoun aamas:lang aama:Hausa .
+hau:Pronoun rdf:type hau:Pos .
+hau:Pronoun rdfs:label "Pronoun" .
+hau:Verb aamas:lang aama:Hausa .
+hau:Verb rdf:type hau:Pos .
+hau:Verb rdfs:label "Verb" .
+
+#SCHEMATA: proClass
+hau:proClass aamas:lang aama:Hausa .
+hau:Proclass aamas:lang aama:Hausa .
+hau:proClass rdfs:domain aamas:Term .
+hau:Proclass rdfs:label "proClass exponents" .
+hau:proClass rdfs:label "proClass" .
+hau:proClass rdfs:range hau:Proclass .
+hau:Proclass rdfs:subClassOf hau:MuExponent .
+hau:proClass rdfs:subPropertyOf hau:muProperty .
+hau:DefMarker aamas:lang aama:Hausa .
+hau:DefMarker rdf:type hau:Proclass .
+hau:DefMarker rdfs:label "DefMarker" .
+hau:Demonstrative aamas:lang aama:Hausa .
+hau:Demonstrative rdf:type hau:Proclass .
+hau:Demonstrative rdfs:label "Demonstrative" .
+hau:Independent aamas:lang aama:Hausa .
+hau:Independent rdf:type hau:Proclass .
+hau:Independent rdfs:label "Independent" .
+hau:PossObj aamas:lang aama:Hausa .
+hau:PossObj rdf:type hau:Proclass .
+hau:PossObj rdfs:label "PossObj" .
+hau:ProComp aamas:lang aama:Hausa .
+hau:ProComp rdf:type hau:Proclass .
+hau:ProComp rdfs:label "ProComp" .
+
+#SCHEMATA: conjClass
+hau:conjClass aamas:lang aama:Hausa .
+hau:Conjclass aamas:lang aama:Hausa .
+hau:conjClass rdfs:domain aamas:Term .
+hau:Conjclass rdfs:label "conjClass exponents" .
+hau:conjClass rdfs:label "conjClass" .
+hau:conjClass rdfs:range hau:Conjclass .
+hau:Conjclass rdfs:subClassOf hau:MuExponent .
+hau:conjClass rdfs:subPropertyOf hau:muProperty .
+hau:Enclitic aamas:lang aama:Hausa .
+hau:Enclitic rdf:type hau:Conjclass .
+hau:Enclitic rdfs:label "Enclitic" .
+hau:Prefix aamas:lang aama:Hausa .
+hau:Prefix rdf:type hau:Conjclass .
+hau:Prefix rdfs:label "Prefix" .
+hau:Suffix aamas:lang aama:Hausa .
+hau:Suffix rdf:type hau:Conjclass .
+hau:Suffix rdfs:label "Suffix" .
+
+#SCHEMATA: case
+hau:case aamas:lang aama:Hausa .
+hau:Case aamas:lang aama:Hausa .
+hau:case rdfs:domain aamas:Term .
+hau:Case rdfs:label "case exponents" .
+hau:case rdfs:label "case" .
+hau:case rdfs:range hau:Case .
+hau:Case rdfs:subClassOf hau:MuExponent .
+hau:case rdfs:subPropertyOf hau:muProperty .
+hau:Ablative aamas:lang aama:Hausa .
+hau:Ablative rdf:type hau:Case .
+hau:Ablative rdfs:label "Ablative" .
+hau:Equative aamas:lang aama:Hausa .
+hau:Equative rdf:type hau:Case .
+hau:Equative rdfs:label "Equative" .
+hau:Locative aamas:lang aama:Hausa .
+hau:Locative rdf:type hau:Case .
+hau:Locative rdfs:label "Locative" .
+hau:Nom_obj aamas:lang aama:Hausa .
+hau:Nom_obj rdf:type hau:Case .
+hau:Nom_obj rdfs:label "Nom_obj" .
+hau:Object aamas:lang aama:Hausa .
+hau:Object rdf:type hau:Case .
+hau:Object rdfs:label "Object" .
+hau:Possessive aamas:lang aama:Hausa .
+hau:Possessive rdf:type hau:Case .
+hau:Possessive rdfs:label "Possessive" .
+hau:Subject aamas:lang aama:Hausa .
+hau:Subject rdf:type hau:Case .
+hau:Subject rdfs:label "Subject" .
+
+#SCHEMATA: polarity
+hau:polarity aamas:lang aama:Hausa .
+hau:Polarity aamas:lang aama:Hausa .
+hau:polarity rdfs:domain aamas:Term .
+hau:Polarity rdfs:label "polarity exponents" .
+hau:polarity rdfs:label "polarity" .
+hau:polarity rdfs:range hau:Polarity .
+hau:Polarity rdfs:subClassOf hau:MuExponent .
+hau:polarity rdfs:subPropertyOf hau:muProperty .
+hau:Affirmative aamas:lang aama:Hausa .
+hau:Affirmative rdf:type hau:Polarity .
+hau:Affirmative rdfs:label "Affirmative" .
+hau:Negative aamas:lang aama:Hausa .
+hau:Negative rdf:type hau:Polarity .
+hau:Negative rdfs:label "Negative" .
+
+#SCHEMATA: tam
+hau:tam aamas:lang aama:Hausa .
+hau:Tam aamas:lang aama:Hausa .
+hau:tam rdfs:domain aamas:Term .
+hau:Tam rdfs:label "tam exponents" .
+hau:tam rdfs:label "tam" .
+hau:tam rdfs:range hau:Tam .
+hau:Tam rdfs:subClassOf hau:MuExponent .
+hau:tam rdfs:subPropertyOf hau:muProperty .
+hau:Aorist aamas:lang aama:Hausa .
+hau:Aorist rdf:type hau:Tam .
+hau:Aorist rdfs:label "Aorist" .
+hau:Future aamas:lang aama:Hausa .
+hau:Future rdf:type hau:Tam .
+hau:Future rdfs:label "Future" .
+hau:Imperative aamas:lang aama:Hausa .
+hau:Imperative rdf:type hau:Tam .
+hau:Imperative rdfs:label "Imperative" .
+hau:Jussive aamas:lang aama:Hausa .
+hau:Jussive rdf:type hau:Tam .
+hau:Jussive rdfs:label "Jussive" .
+hau:NA aamas:lang aama:Hausa .
+hau:NA rdf:type hau:Tam .
+hau:NA rdfs:label "NA" .
+hau:Optative aamas:lang aama:Hausa .
+hau:Optative rdf:type hau:Tam .
+hau:Optative rdfs:label "Optative" .
+hau:Past aamas:lang aama:Hausa .
+hau:Past rdf:type hau:Tam .
+hau:Past rdfs:label "Past" .
+hau:Permissive aamas:lang aama:Hausa .
+hau:Permissive rdf:type hau:Tam .
+hau:Permissive rdfs:label "Permissive" .
+hau:Present aamas:lang aama:Hausa .
+hau:Present rdf:type hau:Tam .
+hau:Present rdfs:label "Present" .
+
+#SCHEMATA: postpositionClass
+hau:postpositionClass aamas:lang aama:Hausa .
+hau:Postpositionclass aamas:lang aama:Hausa .
+hau:postpositionClass rdfs:domain aamas:Term .
+hau:Postpositionclass rdfs:label "postpositionClass exponents" .
+hau:postpositionClass rdfs:label "postpositionClass" .
+hau:postpositionClass rdfs:range hau:Postpositionclass .
+hau:Postpositionclass rdfs:subClassOf hau:MuExponent .
+hau:postpositionClass rdfs:subPropertyOf hau:muProperty .
+
+#SCHEMATA: gender
+hau:gender aamas:lang aama:Hausa .
+hau:Gender aamas:lang aama:Hausa .
+hau:gender rdfs:domain aamas:Term .
+hau:Gender rdfs:label "gender exponents" .
+hau:gender rdfs:label "gender" .
+hau:gender rdfs:range hau:Gender .
+hau:Gender rdfs:subClassOf hau:MuExponent .
+hau:gender rdfs:subPropertyOf hau:muProperty .
+hau:Common aamas:lang aama:Hausa .
+hau:Common rdf:type hau:Gender .
+hau:Common rdfs:label "Common" .
+hau:Fem aamas:lang aama:Hausa .
+hau:Fem rdf:type hau:Gender .
+hau:Fem rdfs:label "Fem" .
+hau:Masc aamas:lang aama:Hausa .
+hau:Masc rdf:type hau:Gender .
+hau:Masc rdfs:label "Masc" .
+
+#SCHEMATA: pluralClass
+hau:pluralClass aamas:lang aama:Hausa .
+hau:Pluralclass aamas:lang aama:Hausa .
+hau:pluralClass rdfs:domain aamas:Term .
+hau:Pluralclass rdfs:label "pluralClass exponents" .
+hau:pluralClass rdfs:label "pluralClass" .
+hau:pluralClass rdfs:range hau:Pluralclass .
+hau:Pluralclass rdfs:subClassOf hau:MuExponent .
+hau:pluralClass rdfs:subPropertyOf hau:muProperty .
+
+#SCHEMATA: nmorphClass
+hau:nmorphClass aamas:lang aama:Hausa .
+hau:Nmorphclass aamas:lang aama:Hausa .
+hau:nmorphClass rdfs:domain aamas:Term .
+hau:Nmorphclass rdfs:label "nmorphClass exponents" .
+hau:nmorphClass rdfs:label "nmorphClass" .
+hau:nmorphClass rdfs:range hau:Nmorphclass .
+hau:Nmorphclass rdfs:subClassOf hau:MuExponent .
+hau:nmorphClass rdfs:subPropertyOf hau:muProperty .
+hau:PLMARK aamas:lang aama:Hausa .
+hau:PLMARK rdf:type hau:Nmorphclass .
+hau:PLMARK rdfs:label "PLMARK" .
+hau:POSTPOSITION aamas:lang aama:Hausa .
+hau:POSTPOSITION rdf:type hau:Nmorphclass .
+hau:POSTPOSITION rdfs:label "POSTPOSITION" .
+
+#SCHEMATA: defClass
+hau:defClass aamas:lang aama:Hausa .
+hau:Defclass aamas:lang aama:Hausa .
+hau:defClass rdfs:domain aamas:Term .
+hau:Defclass rdfs:label "defClass exponents" .
+hau:defClass rdfs:label "defClass" .
+hau:defClass rdfs:range hau:Defclass .
+hau:Defclass rdfs:subClassOf hau:MuExponent .
+hau:defClass rdfs:subPropertyOf hau:muProperty .
+hau:DefClass1 aamas:lang aama:Hausa .
+hau:DefClass1 rdf:type hau:Defclass .
+hau:DefClass1 rdfs:label "DefClass1" .
+hau:DefClass2 aamas:lang aama:Hausa .
+hau:DefClass2 rdf:type hau:Defclass .
+hau:DefClass2 rdfs:label "DefClass2" .
+hau:DefClass3 aamas:lang aama:Hausa .
+hau:DefClass3 rdf:type hau:Defclass .
+hau:DefClass3 rdfs:label "DefClass3" .
+
+#SCHEMATA: deixis
+hau:deixis aamas:lang aama:Hausa .
+hau:Deixis aamas:lang aama:Hausa .
+hau:deixis rdfs:domain aamas:Term .
+hau:Deixis rdfs:label "deixis exponents" .
+hau:deixis rdfs:label "deixis" .
+hau:deixis rdfs:range hau:Deixis .
+hau:Deixis rdfs:subClassOf hau:MuExponent .
+hau:deixis rdfs:subPropertyOf hau:muProperty .
+hau:Far aamas:lang aama:Hausa .
+hau:Far rdf:type hau:Deixis .
+hau:Far rdfs:label "Far" .
+hau:Near aamas:lang aama:Hausa .
+hau:Near rdf:type hau:Deixis .
+hau:Near rdfs:label "Near" .
+
+#SCHEMATA: pdgmType
+aamas:pdgmType aamas:lang aama:Hausa .
+aamas:Pdgmtype aamas:lang aama:Hausa .
+aamas:pdgmType rdfs:domain aamas:Termcluster .
+aamas:Pdgmtype rdfs:label "pdgmType exponents" .
+aamas:pdgmType rdfs:label "pdgmType" .
+aamas:pdgmType rdfs:range aamas:Pdgmtype .
+aamas:Pdgmtype rdfs:subClassOf hau:MuExponent .
+aamas:pdgmType rdfs:subPropertyOf hau:muProperty .
+hau:Finite aamas:lang aama:Hausa .
+hau:Finite rdf:type aamas:Pdgmtype .
+hau:Finite rdfs:label "Finite" .
+hau:FinitePartial aamas:lang aama:Hausa .
+hau:FinitePartial rdf:type aamas:Pdgmtype .
+hau:FinitePartial rdfs:label "FinitePartial" .
+hau:PRO aamas:lang aama:Hausa .
+hau:PRO rdf:type aamas:Pdgmtype .
+hau:PRO rdfs:label "PRO" .
+hau:NOM aamas:lang aama:Hausa .
+hau:NOM rdf:type aamas:Pdgmtype .
+hau:NOM rdfs:label "NOM" .
+hau:VOther aamas:lang aama:Hausa .
+hau:VOther rdf:type aamas:Pdgmtype .
+hau:VOther rdfs:label "VOther" .
+
+#SCHEMATA: rootClass
+hau:rootClass aamas:lang aama:Hausa .
+hau:Rootclass aamas:lang aama:Hausa .
+hau:rootClass rdfs:domain aamas:Term .
+hau:Rootclass rdfs:label "rootClass exponents" .
+hau:rootClass rdfs:label "rootClass" .
+hau:rootClass rdfs:range hau:Rootclass .
+hau:Rootclass rdfs:subClassOf hau:MuExponent .
+hau:rootClass rdfs:subPropertyOf hau:muProperty .
+hau:CCC aamas:lang aama:Hausa .
+hau:CCC rdf:type hau:Rootclass .
+hau:CCC rdfs:label "CCC" .
+hau:CCY aamas:lang aama:Hausa .
+hau:CCY rdf:type hau:Rootclass .
+hau:CCY rdfs:label "CCY" .
+hau:CVC aamas:lang aama:Hausa .
+hau:CVC rdf:type hau:Rootclass .
+hau:CVC rdfs:label "CVC" .
+hau:Invar aamas:lang aama:Hausa .
+hau:Invar rdf:type hau:Rootclass .
+hau:Invar rdfs:label "Invar" .
+
+#PCLASSES:
+
+hau:person aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+hau:number aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+hau:gender aamas:pclass aamas:pngClass .
+aamas:pngClass rdfs:label "pngClass" .
+hau:case aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+hau:defClass aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+hau:deixis aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+hau:derivedStem aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+hau:derivedStemAug aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+hau:participle aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+hau:polarity aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+hau:pos aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+hau:proClass aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+hau:tam aamas:pclass aamas:synsemClass .
+aamas:synsemClass rdfs:label "synsemClass" .
+hau:conjClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+hau:pluralClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+hau:postpositionClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+hau:rootClass aamas:pclass aamas:inflClass .
+aamas:inflClass rdfs:label "inflClass" .
+
+#LEXEMES:
+aama:Hausa-token a aamas:Lexeme ;
+	aamas:lang aama:Hausa ;
+	rdfs:label "token" ;
+	hau:conjClass hau:token ;
+	hau:derivedStem hau:token ;
+	hau:rootClass hau:token ;
+	aamas:lemma "" ;
+	aamas:gloss "" ;
+	.
+
+#TERMCLUSTER:  Finite_Verb_Paradigms_to_be_added
+
+hau:Finite_Verb_Paradigms_to_be_added a aamas:Termcluster ;
+	rdfs:label "Finite_Verb_Paradigms_to_be_added" ;
+	aamas:lang aama:Hausa ;
+	rdfs:comment "" 
+	.
+
+aama:ID2102aeb4-68fd-4fa9-b131-e0d79fea16b0 a aamas:Term ;
+	aamas:lang aama:Hausa ;
+	aamas:memberOf hau:Finite_Verb_Paradigms_to_be_added ;
+	hau:vmorpheme hau:FiniteToBeAdded ;
+	hau:pos hau:Verb ;
+	hau:person hau:To_be_added ;
+	hau:tam hau:To_be_added ;
+	hau:token "not attested" ;
+	.
+
+#TERMCLUSTER:  Pronominal_Paradigms_to_be_added
+
+hau:Pronominal_Paradigms_to_be_added a aamas:Termcluster ;
+	rdfs:label "Pronominal_Paradigms_to_be_added" ;
+	aamas:lang aama:Hausa ;
+	rdfs:comment "" 
+	.
+
+aama:IDfd2fd8c1-b757-4285-b8be-48efa335724e a aamas:Term ;
+	aamas:lang aama:Hausa ;
+	aamas:memberOf hau:Pronominal_Paradigms_to_be_added ;
+	hau:pos hau:Pronoun ;
+	hau:proClass hau:To_be_added ;
+	hau:token "not attested" ;
+	.
