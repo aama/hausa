@@ -1,5 +1,5 @@
 #TTL FROM INPUT FILE:
-#../aama-data/data//hausa/hausa-pdgms.edn
+#../aama-data/data/hausa/hausa-pdgms.edn
 
 @prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
@@ -462,6 +462,8 @@ hau:rootClass aamas:pclass aamas:inflClass .
 aamas:inflClass rdfs:label "inflClass" .
 
 #LEXEMES:
+
+##LexItems
 aama:Hausa-token a aamas:Lexeme ;
 	aamas:lang aama:Hausa ;
 	rdfs:label "token" ;
@@ -480,7 +482,7 @@ hau:Finite_Verb_Paradigms_to_be_added a aamas:Termcluster ;
 	rdfs:comment "" 
 	.
 
-aama:ID2102aeb4-68fd-4fa9-b131-e0d79fea16b0 a aamas:Term ;
+aama:IDf265beb7-6371-4876-8dd6-9f8726829bd2 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:Finite_Verb_Paradigms_to_be_added ;
 	hau:vmorpheme hau:FiniteToBeAdded ;
@@ -498,7 +500,7 @@ hau:Pronominal_Paradigms_to_be_added a aamas:Termcluster ;
 	rdfs:comment "" 
 	.
 
-aama:IDfd2fd8c1-b757-4285-b8be-48efa335724e a aamas:Term ;
+aama:IDddc6d508-6e51-49c8-afed-aac5576efefc a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:Pronominal_Paradigms_to_be_added ;
 	hau:pos hau:Pronoun ;
