@@ -2,7 +2,7 @@
  :lang :hausa
  :subfamily "WChadic"
  :sgpref "hau"
- :datasource "Newman2000"
+ :datasource "Newman2000; abbrev. N00"
  :datasourceNotes ""
  :geodemoURL "http://www.ethnologue.com/language/hau"
  :geodemoTXT "Widespread in Northern Nigeria; also Burkina Faso, Niger, and other countries in West Africa.  33,500,000 speakers in Nigeria, all users. L1 users: 18,500,000 (1991 SIL). L2 users: 15,000,000. Total users in all countries: 46,874,100 (as L1: 27,374,100; as L2: 19,500,000)."
@@ -17,7 +17,7 @@
  :termclusters [
 
                 {:label "Finite_Verb_Paradigms_to_be_added"
-                 :note ""
+                 :note "N00"
                  :common {:vmorpheme :FiniteToBeAdded
                           :pos :Verb,
                           ;; needs :person and one other prop to pass muster
@@ -27,7 +27,7 @@
                          [  "not attested"]]
                  }
                 {:label "hausa-PInd"
-                 :note "This is the independent non-subject. The weak subject combines with the TAM marker. Newman2000, 476"
+                 :note "N00p.476 :: This is the independent non-subject. The weak subject combines with the TAM marker. Newman2000, 476"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :case :Subject
@@ -43,12 +43,11 @@
                          [:Plural :Person3 :Common "su:"]]
                  }
                 {:label "hausa-PObj"
-                 :note "This is the strong object. Newman2000, 487"
+                 :note "N00p.487 :: This is the strong object. Newman2000, 487"
                  :common {:pos :Pronoun, 
                           :pmorphClass :ProMorph,
                           :case :Subject
                           :proClass :Independent}
-                 :terms [[:number :person :gender :token],
                          :terms [[:number :person :gender :token],
                                  [:Singular :Person1 :Common "ni"],
                                  [:Singular :Person2 :Masc "ka"],
