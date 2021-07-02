@@ -1,0 +1,58 @@
+{
+  "lang": "hausa",
+  "subfamily": "WChadic",
+  "sgpref": "hau",
+  "datasource": "Newman2000; abbrev. N00",
+  "datasourceNotes": "",
+  "geodemoURL": "http://www.ethnologue.com/language/hau",
+  "geodemoTXT": "Widespread in Northern Nigeria; also Burkina Faso, Niger, and other countries in West Africa.  33,500,000 speakers in Nigeria, all users. L1 users: 18,500,000 (1991 SIL). L2 users: 15,000,000. Total users in all countries: 46,874,100 (as L1: 27,374,100; as L2: 19,500,000).",
+  "schemata": {},
+  "lexemes": {},
+  "termclusters": [
+{
+"label": "Finite_Verb_Paradigms_to_be_added",
+"note": "N00",
+"common": {"person": "To_be_added",
+ "pos": "Verb",
+ "tam": "To_be_added",
+ "vmorpheme": "FiniteToBeAdded"},
+"terms":  
+[["token"], ["not attested"]]
+},
+{
+"label": "hausa-PInd",
+"note": "N00p.476 :: This is the independent non-subject. The weak subject combines with the TAM marker. Newman2000, 476",
+"common": {"case": "Subject",
+ "pmorphClass": "ProMorph",
+ "pos": "Pronoun",
+ "proClass": "Independent"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "ni:"],
+ ["Singular", "Person2", "Masc", "kai"],
+ ["Singular", "Person2", "Fem", "ke:"],
+ ["Singular", "Person3", "Masc", "ʃi:"],
+ ["Singular", "Person3", "Fem", "ita"],
+ ["Plural", "Person1", "Common", "mu:"],
+ ["Plural", "Person2", "Common", "ku:"],
+ ["Plural", "Person3", "Common", "su:"]]
+},
+{
+"label": "hausa-PObj",
+"note": "N00p.487 :: This is the strong object. Newman2000, 487",
+"common": {"case": "Subject",
+ "pmorphClass": "ProMorph",
+ "pos": "Pronoun",
+ "proClass": "Independent"},
+"terms":  
+[["number", "person", "gender", "token"],
+ ["Singular", "Person1", "Common", "ni"],
+ ["Singular", "Person2", "Masc", "ka"],
+ ["Singular", "Person2", "Fem", "ki"],
+ ["Singular", "Person3", "Masc", "ʃi"],
+ ["Singular", "Person3", "Fem", "ta"],
+ ["Plural", "Person1", "Common", "mu"],
+ ["Plural", "Person2", "Common", "ku"],
+ ["Plural", "Person3", "Common", "su"]]
+}]
+}

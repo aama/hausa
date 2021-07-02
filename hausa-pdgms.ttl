@@ -1,68 +1,33 @@
 #TTL FROM INPUT FILE:
-#../aama-data/data/hausa/hausa-pdgms.edn
+#data/hausa-pdgms.json
 
-@prefix rdf:	 <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
-@prefix rdfs:	 <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc:    <http://purl.org/dc/elements>.
-@prefix dcterms:    <http://purl.org/dc/terms>.
-@prefix aama:	 <http://id.oi.uchicago.edu/aama/2013/> .
+
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix dc:      <http://purl.org/dc/elements> .
+@prefix dcterms: <http://purl.org/dc/terms> .
+@prefix aama:    <http://id.oi.uchicago.edu/aama/2013/> .
 @prefix aamas:	 <http://id.oi.uchicago.edu/aama/2013/schema/> .
-@prefix hau:   <http://id.oi.uchicago.edu/aama/2013/hausa/> .
+@prefix hau:     <http://id.oi.uchicago.edu/aama/2013/hausa/> .
 
 #LANG INFO:
 
-aama:Hausa a aamas:Language .
+aama:Hausa a aamas:Language.
 aama:Hausa rdfs:label "Hausa" .
 aama:Hausa aamas:subfamily "WChadic" .
 aama:Hausa aamas:lpref "hau" .
 aama:Hausa aamas:dataSource "Newman2000; abbrev. N00" .
-aama:Hausa aamas:dataSourceNotes "" .
 aama:Hausa aamas:geodemoURL "http://www.ethnologue.com/language/hau" .
-aama:Hausa aamas:geodemoTXT "Widespread in Northern Nigeria; also Burkina Faso%% Niger%% and other countries in West Africa.  33%%500%%000 speakers in Nigeria%% all users. L1 users: 18%%500%%000 (1991 SIL). L2 users: 15%%000%%000. Total users in all countries: 46%%874%%100 (as L1: 27%%374%%100; as L2: 19%%500%%000)." .
+aama:Hausa aamas:geodemoTxt "Widespread in Northern Nigeria; also Burkina Faso, Niger, and other countries in West Africa.  33,500,000 speakers in Nigeria, all users. L1 users: 18,500,000 (1991 SIL). L2 users: 15,000,000. Total users in all countries: 46,874,100 (as L1: 27,374,100; as L2: 19,500,000)." .
+
+#LEXEMES: Hausa
+
+#LexItems: Hausa
 
 
-#PCLASSES:
+#TERMCLUSTERS: Hausa
 
-hau:person aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-hau:number aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-hau:gender aamas:pclass aamas:pngClass .
-aamas:pngClass rdfs:label "pngClass" .
-hau:case aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-hau:defClass aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-hau:deixis aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-hau:derivedStem aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-hau:derivedStemAug aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-hau:participle aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-hau:polarity aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-hau:pos aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-hau:proClass aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-hau:tam aamas:pclass aamas:synsemClass .
-aamas:synsemClass rdfs:label "synsemClass" .
-hau:conjClass aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
-hau:pluralClass aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
-hau:postpositionClass aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
-hau:rootClass aamas:pclass aamas:inflClass .
-aamas:inflClass rdfs:label "inflClass" .
-
-#LEXEMES:
-
-##LexItems
-
-#TERMCLUSTER:  Finite_Verb_Paradigms_to_be_added
+#TERMCLUSTER: Finite_Verb_Paradigms_to_be_added
 
 hau:Finite_Verb_Paradigms_to_be_added a aamas:Termcluster ;
 	rdfs:label "Finite_Verb_Paradigms_to_be_added" ;
@@ -70,236 +35,237 @@ hau:Finite_Verb_Paradigms_to_be_added a aamas:Termcluster ;
 	rdfs:comment "N00" 
 	.
 
-aama:IDa99bb503-2bc0-4b44-b39f-3ee00906cb73 a aamas:Term ;
+aama:ID42f81f3b-14e3-4615-b4a4-6cfb12dd6566 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:Finite_Verb_Paradigms_to_be_added ;
-	hau:vmorpheme hau:FiniteToBeAdded ;
-	hau:pos hau:Verb ;
 	hau:person hau:To_be_added ;
+	hau:pos hau:Verb ;
 	hau:tam hau:To_be_added ;
+	hau:vmorpheme hau:FiniteToBeAdded ;
 	hau:token "not attested" ;
 	.
 
-#TERMCLUSTER:  hausa-PInd
+#TERMCLUSTER: hausa-PInd
 
 hau:hausa-PInd a aamas:Termcluster ;
 	rdfs:label "hausa-PInd" ;
 	aamas:lang aama:Hausa ;
-	rdfs:comment "N00p.476 :: This is the independent non-subject. The weak subject combines with the TAM marker. Newman2000%% 476" 
+	rdfs:comment "N00p.476 :: This is the independent non-subject. The weak subject combines with the TAM marker. Newman2000, 476" 
 	.
 
-aama:ID6d444414-13c2-48d6-8a9f-93e0a56f2730 a aamas:Term ;
+aama:ID276c309a-7d15-4b1f-a866-8692214d360c a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PInd ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
+	hau:number hau:Singular ;
+	hau:person hau:Person1 ;
+	hau:gender hau:Common ;
 	hau:token "ni:" ;
-	hau:gender hau:Common ;
-	hau:person hau:Person1 ;
-	hau:number hau:Singular ;
 	.
 
-aama:ID232952e0-ba02-4d5a-a2c6-f4214d9657b3 a aamas:Term ;
+aama:ID5529db00-7e52-43f6-8d81-711ab2d9a7f2 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PInd ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
+	hau:number hau:Singular ;
+	hau:person hau:Person2 ;
+	hau:gender hau:Masc ;
 	hau:token "kai" ;
-	hau:gender hau:Masc ;
-	hau:person hau:Person2 ;
-	hau:number hau:Singular ;
 	.
 
-aama:IDa89b2b0f-af58-455c-b161-654a30b36e44 a aamas:Term ;
+aama:ID03196019-2d20-4c57-a40c-084f07a3d167 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PInd ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
+	hau:number hau:Singular ;
+	hau:person hau:Person2 ;
+	hau:gender hau:Fem ;
 	hau:token "ke:" ;
-	hau:gender hau:Fem ;
-	hau:person hau:Person2 ;
-	hau:number hau:Singular ;
 	.
 
-aama:ID17f11982-f01d-4cad-b795-ceda592a1b73 a aamas:Term ;
+aama:IDdca70539-a782-4965-90b0-3f0650f2a61b a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PInd ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
-	hau:token "ʃi:" ;
+	hau:number hau:Singular ;
+	hau:person hau:Person3 ;
 	hau:gender hau:Masc ;
-	hau:person hau:Person3 ;
-	hau:number hau:Singular ;
+	hau:token "ʃi:" ;
 	.
 
-aama:ID300d5ed9-0672-4b16-aa1c-a3d51ae8d68d a aamas:Term ;
+aama:IDc556887a-87d2-4cb4-bd8b-848bf6def7f0 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PInd ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
-	hau:token "ita" ;
+	hau:number hau:Singular ;
+	hau:person hau:Person3 ;
 	hau:gender hau:Fem ;
-	hau:person hau:Person3 ;
-	hau:number hau:Singular ;
+	hau:token "ita" ;
 	.
 
-aama:IDdb1df09e-112f-4838-ba33-1c1aa89b6652 a aamas:Term ;
+aama:IDa72ebaf4-c28c-4599-997c-d4c9a2ba41f5 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PInd ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
-	hau:token "mu:" ;
-	hau:gender hau:Common ;
+	hau:number hau:Plural ;
 	hau:person hau:Person1 ;
-	hau:number hau:Plural ;
+	hau:gender hau:Common ;
+	hau:token "mu:" ;
 	.
 
-aama:IDa1ae44a6-27e7-4b86-b2af-c1f6e44037cc a aamas:Term ;
+aama:ID352b18a5-dd9e-4a87-abdc-e27f14f4c04f a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PInd ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
-	hau:token "ku:" ;
-	hau:gender hau:Common ;
+	hau:number hau:Plural ;
 	hau:person hau:Person2 ;
-	hau:number hau:Plural ;
+	hau:gender hau:Common ;
+	hau:token "ku:" ;
 	.
 
-aama:IDc92262ba-79ec-474d-8c68-7d6db81665fd a aamas:Term ;
+aama:IDd03dd589-8c0a-462f-8a1d-3c383d15cbe2 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PInd ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
-	hau:token "su:" ;
-	hau:gender hau:Common ;
-	hau:person hau:Person3 ;
 	hau:number hau:Plural ;
+	hau:person hau:Person3 ;
+	hau:gender hau:Common ;
+	hau:token "su:" ;
 	.
 
-#TERMCLUSTER:  hausa-PObj
+#TERMCLUSTER: hausa-PObj
 
 hau:hausa-PObj a aamas:Termcluster ;
 	rdfs:label "hausa-PObj" ;
 	aamas:lang aama:Hausa ;
-	rdfs:comment "N00p.487 :: This is the strong object. Newman2000%% 487" 
+	rdfs:comment "N00p.487 :: This is the strong object. Newman2000, 487" 
 	.
 
-aama:ID63b0bc84-60aa-4a49-ab8a-a924affe09dc a aamas:Term ;
+aama:IDa7ffdfbc-a7bb-445c-868b-f739a4b73332 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PObj ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
+	hau:number hau:Singular ;
+	hau:person hau:Person1 ;
+	hau:gender hau:Common ;
 	hau:token "ni" ;
-	hau:gender hau:Common ;
-	hau:person hau:Person1 ;
-	hau:number hau:Singular ;
 	.
 
-aama:IDbc10eafe-3974-4dce-bca3-fbf4be86dd1c a aamas:Term ;
+aama:IDe30f4b54-457d-4bdf-a086-14a269fd01a1 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PObj ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
+	hau:number hau:Singular ;
+	hau:person hau:Person2 ;
+	hau:gender hau:Masc ;
 	hau:token "ka" ;
-	hau:gender hau:Masc ;
-	hau:person hau:Person2 ;
-	hau:number hau:Singular ;
 	.
 
-aama:IDee0e8ea2-08c7-4321-abf4-466501381e58 a aamas:Term ;
+aama:IDa7fcf608-7a0b-44f4-ad1b-9358db50f742 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PObj ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
+	hau:number hau:Singular ;
+	hau:person hau:Person2 ;
+	hau:gender hau:Fem ;
 	hau:token "ki" ;
-	hau:gender hau:Fem ;
-	hau:person hau:Person2 ;
-	hau:number hau:Singular ;
 	.
 
-aama:ID5d8f436f-19be-4410-b87d-121169d0d79c a aamas:Term ;
+aama:IDf7b7af86-e9ff-4865-bc9e-b141e5b8efee a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PObj ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
-	hau:token "ʃi" ;
+	hau:number hau:Singular ;
+	hau:person hau:Person3 ;
 	hau:gender hau:Masc ;
-	hau:person hau:Person3 ;
-	hau:number hau:Singular ;
+	hau:token "ʃi" ;
 	.
 
-aama:IDccb412e9-df30-40f5-8d0a-af24bafadf4e a aamas:Term ;
+aama:ID37d1e230-f2fd-4577-90b0-1b0b9df02204 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PObj ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
-	hau:token "ta" ;
+	hau:number hau:Singular ;
+	hau:person hau:Person3 ;
 	hau:gender hau:Fem ;
-	hau:person hau:Person3 ;
-	hau:number hau:Singular ;
+	hau:token "ta" ;
 	.
 
-aama:ID5b9c5a31-5d28-4b61-af35-3fcb171e9494 a aamas:Term ;
+aama:ID06aa2335-de53-43e8-8625-e8cad0aadda5 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PObj ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
-	hau:token "mu" ;
-	hau:gender hau:Common ;
+	hau:number hau:Plural ;
 	hau:person hau:Person1 ;
-	hau:number hau:Plural ;
+	hau:gender hau:Common ;
+	hau:token "mu" ;
 	.
 
-aama:ID688da53c-dca7-42c1-9d4f-b0bb4e7c0874 a aamas:Term ;
+aama:ID7475befd-3c67-4f33-aaf3-8192e79a2c57 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PObj ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
-	hau:token "ku" ;
-	hau:gender hau:Common ;
+	hau:number hau:Plural ;
 	hau:person hau:Person2 ;
-	hau:number hau:Plural ;
+	hau:gender hau:Common ;
+	hau:token "ku" ;
 	.
 
-aama:ID1ebd8d51-0e7d-4646-b7e3-2e2d2a5b0ee3 a aamas:Term ;
+aama:ID1584ae9a-9876-4035-bed6-9a7debedbbf4 a aamas:Term ;
 	aamas:lang aama:Hausa ;
 	aamas:memberOf hau:hausa-PObj ;
-	hau:pos hau:Pronoun ;
-	hau:pmorphClass hau:ProMorph ;
 	hau:case hau:Subject ;
+	hau:pmorphClass hau:ProMorph ;
+	hau:pos hau:Pronoun ;
 	hau:proClass hau:Independent ;
-	hau:token "su" ;
-	hau:gender hau:Common ;
-	hau:person hau:Person3 ;
 	hau:number hau:Plural ;
+	hau:person hau:Person3 ;
+	hau:gender hau:Common ;
+	hau:token "su" ;
 	.
+
